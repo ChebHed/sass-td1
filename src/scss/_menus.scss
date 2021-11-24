@@ -1,0 +1,27 @@
+
+  @use './mixins'as *;
+.alerts{
+    display: flex;
+    justify-content:space-between;
+    justify-content: space-evenly;
+    
+    .alert-success{
+      @include alert;
+      background-color: lightgreen;
+    }
+    
+    .alert-warning{
+      @include alert;
+      background-color: magenta;
+    }
+
+    .alert-danger{
+      @include alert;
+      background-color: royalblue;
+    }
+
+    .alert-default{
+      @include alert;
+      background-color: salmon;
+    }
+}
